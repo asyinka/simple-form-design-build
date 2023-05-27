@@ -1,0 +1,26 @@
+:root {
+  --font-weight-bg: 700;
+  --small-px: 10px;
+  --mid-px: 20px;
+  --primary-font-family: "Open Sans", sans-serif;
+
+  --button-color: #ff5252;
+  --primary-color: #25a7b8;
+
+  --app-bg-color: #54bab9;
+  --page-bg-color: #f7ecde;
+  --primary-text-color: #ffffff;
+}
+[data-theme="dark"] {
+  --light-app-bg-color: #354259;
+  --light-page-bg-color: #1c273c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font-family);
+}
+.form-heading {
+  place-items: center;
+}
