@@ -4,23 +4,65 @@
   --mid-px: 20px;
   --primary-font-family: "Open Sans", sans-serif;
 
-  --button-color: #ff5252;
+  --accent-color: #ff5252;
   --primary-color: #25a7b8;
 
   --app-bg-color: #54bab9;
   --page-bg-color: #f7ecde;
   --primary-text-color: #ffffff;
 }
+
 [data-theme="dark"] {
   --light-app-bg-color: #354259;
   --light-page-bg-color: #1c273c;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--primary-font-family);
 }
-.form-heading {
+
+/* Typography */
+/* html {
+  font-size: 62.5%;
+} */
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--page-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
   place-items: center;
+  background-color: var(--app-bg-color);
+  padding-bottom: 10px;
+}
+
+.form-heading {
+  background: linear-gradient(to left, tomato, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.panel-heading {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 20px 10px var(--primary-color);
+  cursor: progress;
 }
