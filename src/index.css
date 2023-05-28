@@ -24,7 +24,7 @@
   font-family: var(--primary-font-family);
 }
 
-/* Typography */
+/* Typography  */
 /* html {
   font-size: 62.5%;
 } */
@@ -65,4 +65,57 @@
   padding: 20px;
   box-shadow: 0 2px 20px 10px var(--primary-color);
   cursor: progress;
+}
+
+.app-form {
+  background-color: var(--app-bg-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* place-items: center; */
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: 450px;
+  max-height: 250px;
+  border: 4px solid var(--page-bg-color);
+  border-radius: 15px;
+  box-shadow: 0 2px gray;
+}
+
+.app-form label {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 0 2px #f0f323af;
+  font-size: 20px;
+}
+
+.form-button {
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 7px;
+  background-color: aquamarine;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff5252;
+}
+
+.app-form-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
