@@ -23,3 +23,11 @@ This application will be built with the following:
 **_Scaffold:_** Vite, ReactJs
 
 <!-- ## Duration: 2hrs -->
+
+### To execute
+
+- git clone
+
+- run npm install
+
+- npm run dev
