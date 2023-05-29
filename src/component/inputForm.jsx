@@ -4,6 +4,7 @@ const InputForm = ({
   setTextInput,
   nameInput,
   setNameInput,
+  handleFormSubmission,
 }) => {
   const handleNameInput = (e) => {
     return setNameInput(e.target.value);
@@ -15,7 +16,11 @@ const InputForm = ({
 
   return (
     <div className="app-form-bg" onClick={() => setFormDisplay(false)}>
-      <form onClick={(event) => event.stopPropagation()} className="app-form">
+      <form
+        onSubmit={handleFormSubmission}
+        onClick={(event) => event.stopPropagation()}
+        className="app-form"
+      >
         <label htmlFor="name">Name/ID</label>
         <input
           id="name"
@@ -35,7 +40,6 @@ const InputForm = ({
           onChange={handleTextInput}
         />
         <button className="form-button">Click to add Input</button>
-        {`text: ${textInput}`} {`name: ${nameInput}`}
       </form>
     </div>
   );

@@ -1,7 +1,7 @@
 export default class formDetails {
   constructor() {
     this.formData = [];
-    this.id = 1;
+    this.id = 0;
   }
 
   createFormData(userName, userText) {

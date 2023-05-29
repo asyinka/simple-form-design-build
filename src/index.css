@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   place-content: center;
+  place-items: center;
   gap: 20px;
   height: 100vh;
 }
@@ -137,7 +138,15 @@
   -webkit-background-clip: text;
   color: transparent;
   display: flex;
-  flex-direction: column;
   place-items: center;
   gap: 10px;
+  margin-bottom: 10px;
+}
+
+.inputCont {
+  margin-top: 20px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px 5px rgba(37, 36, 36, 0.89);
 }
