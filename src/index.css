@@ -28,14 +28,17 @@
 /* html {
   font-size: 62.5%;
 } */
+body {
+  /* background-image: url("src/assets/images/bg-image.jpg"); */
+}
 
 .app {
   height: 100vh;
   width: 100vw;
-  background-color: var(--page-bg-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-image: url("src/assets/images/bg-image.jpg");
 }
 
 .heading-container {
@@ -133,7 +136,7 @@
 .inputsPanel {
   font-size: 20px;
   font-weight: bold;
-  background: linear-gradient(to top, tomato, rgb(106, 182, 19));
+  background: linear-gradient(to right, rgb(223, 187, 181), rgb(203, 231, 172));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -141,12 +144,15 @@
   place-items: center;
   gap: 10px;
   margin-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 
 .inputCont {
   margin-top: 20px;
-  max-width: 350px;
+  max-width: 450px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 1px 5px rgba(37, 36, 36, 0.89);
+  background-color: #3b075e9c;
+  overflow: scroll;
 }

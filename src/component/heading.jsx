@@ -3,7 +3,7 @@ const HeadingSection = () => {
     <div className="heading-container">
       <h1 className="form-heading">Hello World</h1>
       <article>
-        A simple form to take in input and display input content
+        This is a simple page that takes input and display on the display board
       </article>
     </div>
   );
