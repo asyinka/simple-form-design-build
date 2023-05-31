@@ -1,4 +1,4 @@
-# Input App
+# Simple Web Form Application
 
 <article>This is a simple design of a form input</article>
 
