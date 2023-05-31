@@ -32,6 +32,8 @@ This application will be built with the following:
 
 **_Scaffold:_** Vite, ReactJs
 
+**_Notify:_** Toastify
+
 <!-- ## Duration: 2hrs -->
 
 ### To execute

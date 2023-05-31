@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import InputForm from "../component/inputForm";
 import HeadingSection from "../component/heading";
 import Badge from "../component/badge";
@@ -15,6 +19,16 @@ const HomePage = () => {
 
   const handleFormSubmission = (e) => {
     e.preventDefault();
+
+    if (
+      textInput.length == 0 ||
+      nameInput.length == 0 ||
+      topicInput.length == 0
+    ) {
+      toast("Please ensure all inputs are filled");
+
+      return;
+    }
 
     formData.createFormData(nameInput, textInput, topicInput);
 
@@ -68,6 +82,7 @@ const HomePage = () => {
           handleFormSubmission={handleFormSubmission}
         />
       )}
+      <ToastContainer />
     </div>
   );
 };
