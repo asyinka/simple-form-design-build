@@ -12,7 +12,7 @@
 
 [data-theme="dark"] {
   --form-bg-color: #354259;
-  --primary-color: #057272;
+  --primary-color: #036d6d;
   --form-font-color: #eee8e8d7;
   --button-text-wgt: 500;
   --accent-color: var(--primary-text-color);
@@ -49,15 +49,12 @@
 }
 
 .mode-icons--after {
-  transition-property: padding;
-  transition-duration: 1s;
   padding-left: 30px;
 }
 
 .mode-icons span {
   font-size: 20px;
   cursor: pointer;
-  /* float: right; */
 }
 
 .heading-container {
@@ -143,6 +140,7 @@
   cursor: pointer;
   font-weight: var(--button-text-wgt);
   color: var(--accent-color);
+  box-shadow: 0 2px 2px 3px;
 }
 
 .app-form-bg {
