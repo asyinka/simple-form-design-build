@@ -1,20 +1,21 @@
 :root {
-  --font-weight-bg: 700;
-  --small-px: 10px;
-  --mid-px: 20px;
   --primary-font-family: "Open Sans", sans-serif;
 
-  --accent-color: #ff5252;
-  --primary-color: #25a7b8;
+  --accent-color: #530606;
+  --primary-color: #2cbdbd;
+  --button-text-wgt: 800;
+  --form-font-color: #222121;
 
-  --app-bg-color: #54bab9;
-  --page-bg-color: #f7ecde;
+  --form-bg-color: #54aeba;
   --primary-text-color: #ffffff;
 }
 
 [data-theme="dark"] {
-  --light-app-bg-color: #354259;
-  --light-page-bg-color: #1c273c;
+  --form-bg-color: #354259;
+  --primary-color: #057272;
+  --form-font-color: #eee8e8d7;
+  --button-text-wgt: 500;
+  --accent-color: var(--primary-text-color);
 }
 
 * {
@@ -28,9 +29,6 @@
 /* html {
   font-size: 62.5%;
 } */
-body {
-  /* background-image: url("src/assets/images/bg-image.jpg"); */
-}
 
 .app {
   height: 100vh;
@@ -41,11 +39,36 @@ body {
   background-image: url("src/assets/images/bg-image.jpg");
 }
 
+.mode-icons {
+  background-color: #241a1acc;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mode-icons--after {
+  transition-property: padding;
+  transition-duration: 1s;
+  padding-left: 30px;
+}
+
+.mode-icons span {
+  font-size: 20px;
+  cursor: pointer;
+  /* float: right; */
+}
+
 .heading-container {
   display: flex;
   flex-direction: column;
   place-items: center;
   padding-bottom: 10px;
+}
+
+.heading-container article {
+  font-size: 18px;
 }
 
 .homePage {
@@ -67,8 +90,8 @@ body {
   margin-top: 10px;
 }
 
-.panel-heading {
-  background-color: var(--accent-color);
+.panel {
+  background-color: rgba(135, 207, 235, 0.575);
   border-radius: 5px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -81,16 +104,14 @@ body {
 }
 
 .app-form {
-  background-color: var(--app-bg-color);
+  background-color: var(--form-bg-color);
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* place-items: center; */
   justify-content: center;
   align-items: center;
   gap: 25px;
   max-width: 450px;
-  max-height: 350px;
   border: 4px solid var(--page-bg-color);
   border-radius: 15px;
   box-shadow: 0 2px gray;
@@ -100,6 +121,7 @@ body {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
+  color: var(--form-font-color);
 }
 
 .form-input {
@@ -116,11 +138,11 @@ body {
   display: inline-block;
   border: none;
   border-radius: 7px;
-  background-color: aquamarine;
+  background-color: var(--primary-color);
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: bold;
-  color: #ff5252;
+  font-weight: var(--button-text-wgt);
+  color: var(--accent-color);
 }
 
 .app-form-bg {
@@ -141,18 +163,20 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   display: flex;
+  flex-direction: column;
   place-items: center;
   gap: 10px;
   margin-bottom: 10px;
   border-bottom: 2px solid black;
+  cursor: pointer;
 }
 
 .inputCont {
   margin-top: 20px;
-  max-width: 450px;
+  max-width: 500px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 1px 5px rgba(37, 36, 36, 0.89);
   background-color: #3b075e9c;
-  overflow: scroll;
+  overflow-y: auto;
 }

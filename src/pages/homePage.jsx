@@ -11,17 +11,20 @@ const HomePage = () => {
   const [textInput, setTextInput] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [formDetails, setFormDetails] = useState([]);
+  const [topicInput, setTopicInput] = useState("");
 
   const handleFormSubmission = (e) => {
     e.preventDefault();
 
-    formData.createFormData(nameInput, textInput);
+    formData.createFormData(nameInput, textInput, topicInput);
 
     getFormDetails();
 
     setNameInput("");
 
     setTextInput("");
+
+    setTopicInput("");
 
     // console.log(formDetails);
 
@@ -46,7 +49,8 @@ const HomePage = () => {
       <div className="inputCont">
         {formDetails.map((detail) => (
           <div key={detail.id} className="inputsPanel">
-            <div className="userName">{detail.userName}</div>
+            <div className="userName">{` ${detail.id}. Author: ${detail.userName}`}</div>
+            <div className="userInput">{`Topic: ${detail.userTopic}`}</div>
             <div className="userInput">{detail.userText}</div>
           </div>
         ))}
@@ -59,6 +63,8 @@ const HomePage = () => {
           setFormDisplay={setFormDisplay}
           nameInput={nameInput}
           setNameInput={setNameInput}
+          topicInput={topicInput}
+          setTopicInput={setTopicInput}
           handleFormSubmission={handleFormSubmission}
         />
       )}

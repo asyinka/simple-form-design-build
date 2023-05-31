@@ -4,10 +4,11 @@ export default class formDetails {
     this.id = 0;
   }
 
-  createFormData(userName, userText) {
+  createFormData(userName, userText, userTopic) {
     const userInputs = {
       userName: userName,
       userText: userText,
+      userTopic: userTopic,
       id: ++this.id,
     };
     this.formData.push(userInputs);
