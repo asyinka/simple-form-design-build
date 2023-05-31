@@ -1,6 +1,6 @@
-# Input App
+# Simple Web Form Application
 
-<article>This is a simple design of a form input</article>
+<article>This is a simple creation of a web application that takes random form input</article>
 
 ## App Functionalities
 
