@@ -36,8 +36,10 @@ This application will be built with the following:
 
 ### To execute
 
-- git clone
+- git clone...
 
-- run npm install
+- npm install
 
 - npm run dev
+
+**PROJECT AIM ACHIEVED**
